@@ -1,5 +1,5 @@
 import NextImage from "next/image";
-import { Box, Center, Divider } from "@chakra-ui/layout";
+import { Box, Divider } from "@chakra-ui/layout";
 
 import NavMenu from "./navMenu";
 import MusicMenu from "./musicMenu";

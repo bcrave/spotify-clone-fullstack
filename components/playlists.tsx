@@ -1,9 +1,11 @@
 import { Box, List } from "@chakra-ui/layout";
 import PlaylistItem from "./playlistItem";
 
-const playlists = new Array(30).fill(1).map((_, i) => `Playlist ${i + 1}`);
+import { usePlaylist } from "../lib/hooks";
 
 const Playlists = () => {
+  const { playlists } = usePlaylist();
+
   return (
     <Box
       height="62%"
@@ -25,7 +27,7 @@ const Playlists = () => {
     >
       <List spacing={2}>
         {playlists.map((playlist) => (
-          <PlaylistItem playlist={playlist} key={playlist} />
+          <PlaylistItem playlist={playlist} key={playlist.id} />
         ))}
       </List>
     </Box>
