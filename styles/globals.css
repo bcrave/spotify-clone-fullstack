@@ -14,3 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
+/* 
+::-webkit-scrollbar-track {
+  background-color: hsl(120 75% 50% / 1);
+} */
